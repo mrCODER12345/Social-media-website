@@ -1,10 +1,20 @@
-body{
+body {
     background-image: url("bgimg.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    
+
 }
-#heading{
-    color: blue;
-    font-family: 'algerian' ;
+
+#heading {
+    color: rgb(176, 176, 225);
+    font-family: 'algerian';
+}
+
+#logfor {
+    background: grey;
+    border: 2px solid;
+    border-color: black;
+    width: 20%;
+    border-radius: 10px;
+
 }
