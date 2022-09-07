@@ -1,0 +1,10 @@
+body{
+    background-image: url("bgimg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+#heading{
+    color: blue;
+    font-family: 'algerian' ;
+}
