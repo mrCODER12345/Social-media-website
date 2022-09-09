@@ -6,8 +6,8 @@ body {
 }
 
 #heading {
-    color: rgb(176, 176, 225);
-    font-family: 'algerian';
+    color: rgb(25, 25, 48);
+    font-family: 'berkville old face';
 }
 
 #logfor {
@@ -17,4 +17,10 @@ body {
     width: 20%;
     border-radius: 10px;
 
+}
+#craccount{
+    background-color:rgb(59, 93, 54);
+}
+#signinb{
+    background-color: rgb(124, 124, 199);
 }
