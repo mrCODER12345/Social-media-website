@@ -1,0 +1,12 @@
+body{
+    background-image: url("images/cre.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#focr{
+    background: grey;
+    border: 2px solid;
+    border-color: black;
+    width: 70%;
+    border-radius: 10px;
+}
