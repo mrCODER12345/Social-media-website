@@ -10,8 +10,7 @@ io.on('connection',socket=>{
         var recf = recff.concat(recfc)
         var idof = fs.readFileSync(recf)
         if(key==idof){
-            console.log("matched")
-            console.log(data.identity,'joined the chat');
+                console.log(data.identity,'joined the chat');
         }
         else{
             console.log("not matached")
