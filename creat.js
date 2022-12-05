@@ -1,6 +1,7 @@
 const socket = io('http://localhost:4000')
 
 console.log("workign ")
+
 function store(){
     const name = document.getElementById('cname').value
     const sirname = document.getElementById('csirname').value
@@ -18,4 +19,7 @@ function store(){
     var rece = foli.concat(username,".txt")
     socket.emit('save',{fname:rec,odata:data})
     socket.emit('save',{fname:rece,odata:id_data})
+
+    window.open("index.html")
+
 }
