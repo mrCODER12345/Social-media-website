@@ -5,7 +5,8 @@
     <title>Cvans</title>
 </head>
 <link rel="stylesheet" href="measures.css">
-<script src=functions.js></script>
+<script src="http://localhost:5000/socket.io/socket.io.js"></script>
+<script src=index.js></script>
 
 <body>
     <div id="asdf" ></div>
@@ -19,12 +20,11 @@
         <form id="logfor">
             <br><br>
             <label>Username</label><br><br>
-            <input type="text" placeholder="Identity" aria-label="username"></input><br><br>
+            <input type="text" id="logus" placeholder="Identity" aria-label="username"></input><br><br>
             <label>Password</label><br><br>
-            <input type="password" placeholder="Password"></input>
-            <br><br><button id="signinb">Sign in </button>
+            <input type="password" id="logpa" placeholder="Password"></input>
+            <br><br><button id="signinb" onclick="loginuser()">Sign in </button>
             <br><br>or<br><br>
-
             <a href="creat.html"><img src="images/cr.png"></a>
             <br><br>
         </form>
