@@ -3,6 +3,11 @@ const fs = require('fs')
 
 io.on('connection',socket=>{
     socket.on('save',tobesaved=>{
-        fs.writeFileSync(tobesaved.fname,tobesaved.odata)
+        if(fs.existsSync(tobesaved.fname)){
+            console.log("Username already exists")
+        }
+        else{
+            fs.writeFileSync(tobesaved.fname,tobesaved.odata)
+        }
     })   
 })
