@@ -7,6 +7,7 @@
     <title>create a accound</title>
 </head>
 <link rel="stylesheet" href="measures1.css">
+<script src="http://localhost:4000/socket.io/socket.io.js"></script>
 <script src="creat.js"></script>
 <body>
     <br>
@@ -17,15 +18,15 @@
         <center><form id ="focr">
         <div align="left">
         <br><label >&nbsp;&nbsp;Name</label><label >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sirname</label><br>
-        &nbsp;&nbsp;<input type="text" placeholder="Name"></input>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" placeholder="Sirname"></input><br><br>
+        &nbsp;&nbsp;<input type="text" id="cname" placeholder="Name"></input>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" id="csirname" placeholder="Sirname"></input><br><br>
         <label>&nbsp;&nbsp;Email</label><label >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Password</label><br>
-        &nbsp;&nbsp;<input type="text" placeholder="Email"></input>        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" placeholder="Password"></input><br><br>
+        &nbsp;&nbsp;<input type="text" id="cemail" placeholder="Email"></input>        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" id="cpassword" placeholder="Password"></input><br><br>
         <label>&nbsp;&nbsp;Username</label><label >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;City</label><br>
-        &nbsp;&nbsp;<input type="text" placeholder="Username"></input>        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" placeholder="City"></input><br><br>
+        &nbsp;&nbsp;<input type="text" id="cusername" placeholder="Username"></input>        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" id="ccity" placeholder="City"></input><br><br>
         <label>&nbsp;&nbsp;Phone</label><label >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;State</label><br>
-        &nbsp;&nbsp;<input type="mobile number" placeholder="Phone no."></input>        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" placeholder="State"></input><br><br></div>
-        <button id="finali">create</button><br><br>
+        &nbsp;&nbsp;<input type="mobile number" id="cphone" placeholder="Phone no."></input>        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" id="cstate" placeholder="State"></input><br><br></div>
+        <button id="finali" onclick="store()">create</button><br><br>
         </form></center>
     </center>
     
