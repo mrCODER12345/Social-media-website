@@ -21,5 +21,6 @@ function store(){
     socket.emit('save',{fname:rece,odata:id_data})
 
     window.open("index.html")
+    window.close()
 
 }

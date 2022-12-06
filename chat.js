@@ -3,7 +3,7 @@ const socket = io('http://localhost:8000')
 const container = document.querySelector('.container')
 const form = document.getElementById('myform')
 const inputcon = document.getElementById('sender')
-const usern = prompt('Enter name')
+
 
 const append = (message,position)=>{
     const messageElement = document.createElement('div')
@@ -22,10 +22,12 @@ form.addEventListener('submit',(e)=>{
     inputcon.value = ''
 
 })
-console.log(usern)
-socket.emit('new-join',usern)
+
+socket.emit('new-join')
 socket.on('joined',name=>{
-    fullname = name.concat(' joined the chat')
+    var enc = new TextDecoder("utf-8");
+    namee = (enc.decode(name))
+    var fullname = namee.concat(' joined the chat')
     append(fullname,'left')
 })
 socket.on('recieve',messag=>{
