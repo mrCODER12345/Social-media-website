@@ -31,6 +31,9 @@ socket.on('joined',name=>{
     append(fullname,'left')
 })
 socket.on('recieve',messag=>{
-    mess = messag.name.concat(' : ',messag.message)
+    var enc = new TextDecoder("utf-8");
+    console.log(messag)
+    messa = enc.decode(messag.name)
+    mess = messa.concat(' : ',messag.message)
     append(mess,'left')
 })
