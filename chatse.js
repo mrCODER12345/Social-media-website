@@ -8,6 +8,6 @@ io.on('connection',socket=>{
         socket.broadcast.emit('joined',users[socket.id])
     })
     socket.on('message-send',message=>{
-        socket.emit('recieve',{name:user[socket.id],message:message})
+        socket.broadcast.emit('recieve',{name:users[socket.id],message:message})
     })
 })
