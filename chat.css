@@ -1,0 +1,37 @@
+.container{
+    background-color: rgb(138, 130, 130);
+    width:80%;
+    margin: auto;
+    height: 600px;
+    overflow-y: scroll;
+    margin-bottom: 10px;
+}
+.message{
+    background-color: rgb(211, 131, 131);
+    max-width: 25%;
+    border: 2px solid black;
+    margin:5px;
+    padding:5px;
+    border-radius: 10px;
+}
+.left{
+    float: left;
+    clear: both;
+}
+.right{
+    float: right;
+    clear: both;
+}
+#sender{
+    width: 70%;
+    border: 2px solid black;
+    border-radius: 10px;
+    height:20px
+}
+#send{
+    width: 50px;
+    background-color: green;
+    border: 2px;
+    border-radius:10px;
+    height:25px;
+}

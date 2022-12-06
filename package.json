@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/mrCODER12345/Social-media-website#readme",
   "dependencies": {
+    "nodemon": "^2.0.20",
     "socket.io": "^4.5.4"
   }
 }
