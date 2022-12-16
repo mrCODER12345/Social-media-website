@@ -1,6 +1,6 @@
 const socket = io('http://localhost:4000')
 
-console.log("workign ")
+// console.log("workign ")
 
 function store(){
     const name = document.getElementById('cname').value

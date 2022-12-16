@@ -32,7 +32,7 @@ socket.on('joined',name=>{
 })
 socket.on('recieve',messag=>{
     var enc = new TextDecoder("utf-8");
-    console.log(messag)
+    // console.log(messag)
     messa = enc.decode(messag.name)
     mess = messa.concat(' : ',messag.message)
     append(mess,'left')
